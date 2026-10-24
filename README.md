@@ -43,11 +43,15 @@ or discard the preview. See the Goalz privacy information before using it.
 
 ## Publication state
 
-These are source files for review and platform import. This repository does not itself mean that a
-provider listing has been approved, that Grok Bot lists Goalz, or that the production endpoint is
-active. OpenAI portal verification, provider categories and review materials, Grok Build/Cursor
-catalog approval, MCP Registry namespace publication, and production domain/endpoint activation are
-separate steps. The MCP Registry `server.json` is metadata only and has not been submitted.
+Goalz `1.0.0` was published to the official MCP Registry on 2026-10-24 as
+[`io.github.geby85/goalz`](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.geby85%2Fgoalz/versions/1.0.0).
+The registry reports this version as active and latest. Its remote endpoint is
+`https://www.goalz.de/mcp/apps`; production discovery and the OAuth challenge were verified before
+publication. The Registry hosts the connection metadata; Goalz hosts the server.
+
+OpenAI publisher/domain verification and review materials, Grok Build/Cursor catalog approval, and
+Grok Bot availability remain separate provider steps. An MCP Registry listing does not establish
+approval in those provider catalogs.
 
 Grok Bot's documented Connect apps user flow is described at
 <https://cursor.com/help/grok-bot/connect-apps>; it does not document a plugin-source submission
