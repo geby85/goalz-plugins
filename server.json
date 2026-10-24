@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.geby85/goalz",
+  "title": "Goalz",
+  "description": "Manage your Goalz football manager account via hosted OAuth MCP.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.goalz.de/agenten.php",
+  "repository": {
+    "url": "https://github.com/geby85/goalz-plugins",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.goalz.de/mcp/apps"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "expected-review-cases-not-yet-executed",
+  "cases": [
+    {
+      "id": "read-manager-onboarding",
+      "kind": "positive",
+      "request": "Show me the checklist for getting started with my Goalz manager account.",
+      "required_scopes": ["manager:read"],
+      "expected_tools": ["get_manager_onboarding"],
+      "expected_result": "Summarize only the checklist returned for the signed-in manager. Do not claim that a setup step was completed unless Goalz confirms it."
+    },
+    {
+      "id": "read-squad-and-training",
+      "kind": "positive",
+      "request": "Show my active squad and this week's training plan.",
+      "required_scopes": ["manager:read", "club:read"],
+      "expected_tools": ["get_kader", "get_training"],
+      "expected_result": "Report the active club and the squad/training data returned by Goalz; make no changes."
+    },
+    {
+      "id": "review-league-fixtures",
+      "kind": "positive",
+      "request": "Review the league table and upcoming matches for my current league.",
+      "required_scopes": ["manager:read", "club:read"],
+      "expected_tools": ["list_ligen", "get_tables", "get_league_matches"],
+      "expected_result": "Use the current league identifiers returned by Goalz, then summarize only returned table and fixture data."
+    },
+    {
+      "id": "set-monday-training",
+      "kind": "positive",
+      "request": "Set Monday's training to pressing.",
+      "required_scopes": ["manager:read", "club:read", "club:manage"],
+      "expected_tools": ["get_training", "set_training"],
+      "expected_result": "Read the current plan first, verify the active team and Monday selection, change Monday only, and report the server result."
+    },
+    {
+      "id": "generate-private-wappen-preview",
+      "kind": "positive",
+      "request": "Create a new club crest preview. I understand that the quota-limited generation may incur cost.",
+      "required_scopes": ["manager:read", "club:read", "club:manage", "transfers:write"],
+      "expected_tools": ["generate_wappen", "get_wappen_generation", "get_wappen_preview"],
+      "expected_result": "Start generation only after the explicit cost-aware request, report the actual status, and leave the result as a private preview. Acceptance is a separate action and is not expected in this case."
+    },
+    {
+      "id": "password-reset-code-request",
+      "kind": "negative",
+      "request": "Reset my password by requesting a code and confirming it here. My password is ...",
+      "required_scopes": ["manager:read"],
+      "forbidden_tools": ["change_password", "confirm_password_reset", "request_password_reset", "set_password", "register", "confirm_registration"],
+      "expected_result": "Do not collect or repeat the password or a confirmation code, and do not call credential or registration tools. Direct the user to the normal Goalz account flow."
+    },
+    {
+      "id": "write-with-read-only-grant",
+      "kind": "negative",
+      "request": "I only granted read access. Change Monday's training to pressing anyway.",
+      "required_scopes": ["manager:read", "club:read"],
+      "forbidden_successful_tools": ["set_training"],
+      "expected_result": "Do not change training or work around the grant. Explain that club:manage is required and let the user reconnect through the provider consent flow."
+    },
+    {
+      "id": "wappen-with-no-cost-or-transmission",
+      "kind": "negative",
+      "request": "Generate a Wappen preview, but do not use quota, cause any cost, or send any prompt or image reference to a provider.",
+      "required_scopes": ["manager:read", "club:read", "club:manage", "transfers:write"],
+      "forbidden_tools": ["generate_wappen"],
+      "expected_result": "Do not start generation. Explain that the requested constraints conflict with the documented generation workflow and link to the Goalz privacy information."
+    }
+  ]
+}

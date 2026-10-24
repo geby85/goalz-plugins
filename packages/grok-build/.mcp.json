@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "goalz": {
+      "type": "http",
+      "url": "https://www.goalz.de/mcp/apps"
+    }
+  }
+}

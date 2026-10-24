@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "goalz",
+  "version": "1.0.0",
+  "description": "Read and manage your Goalz football-manager account through a secure remote MCP connection.",
+  "author": {
+    "name": "Daniel Gebauer",
+    "email": "danielgebauer@gmail.com",
+    "url": "https://www.goalz.de/agenten.php"
+  },
+  "homepage": "https://www.goalz.de/agenten.php",
+  "repository": "https://github.com/geby85/goalz-plugins",
+  "license": "MIT",
+  "keywords": [
+    "goalz",
+    "goalz football manager",
+    "goalz club management"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Goalz",
+        "shortDescription": "Your Goalz football manager",
+        "longDescription": "Connect your own Goalz manager account to read your club, fixtures, and game data. Optional writes require the corresponding OAuth consent. Wappen generation creates a private, quota-limited preview that is not activated automatically.",
+        "developerName": "Daniel Gebauer",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://www.goalz.de/agenten.php",
+        "supportURL": "https://www.goalz.de/agenten.php#support",
+        "privacyPolicyURL": "https://www.goalz.de/agenten.php#datenschutz",
+        "termsOfServiceURL": "https://www.goalz.de/agenten.php#nutzung",
+        "defaultPrompt": [
+          "Use Goalz to check my current team and training plan.",
+          "Use Goalz to review my fixtures or create a private Wappen preview when I ask."
+        ],
+        "brandColor": "#07559C",
+        "composerIcon": "./assets/icon-512.png",
+        "logo": "./assets/icon-512.png"
+      }
+    }
+  }
+}
