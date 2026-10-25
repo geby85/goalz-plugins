@@ -60,10 +60,10 @@ route. Do not treat a Cursor listing as a Grok Bot listing.
 ## Help and source terms
 
 - Setup: <https://www.goalz.de/agenten.php#einrichten>
-- Support: <https://www.goalz.de/agenten.php#support>
+- Support: <mailto:support@goalz.de> or <https://www.goalz.de/agenten.php#support>
 - Privacy: <https://www.goalz.de/agenten.php#datenschutz>
 - Use terms: <https://www.goalz.de/agenten.php#nutzung>
-- Publisher: Daniel Gebauer, <mailto:danielgebauer@gmail.com>
+- Publisher and marketplace contact: Daniel Gebauer, <mailto:apps@goalz.de>
 
 The authored plugin configuration, skills, and documentation are licensed under MIT. The Goalz name,
 logo, icon, and game artwork are reserved and excluded from that license. See `LICENSE` and

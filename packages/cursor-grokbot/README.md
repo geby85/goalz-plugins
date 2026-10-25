@@ -13,6 +13,6 @@ For a user, the documented Grok Bot steps are:
 
 If Goalz is not in the catalog, this package does not provide a supported manual endpoint-import workflow for Grok Bot. The Goalz listing route for Grok Bot remains to be verified. Do not paste a password or access token into chat.
 
-Read <https://www.goalz.de/agenten.php#einrichten> for setup, <https://www.goalz.de/agenten.php#support> for support, <https://www.goalz.de/agenten.php#datenschutz> for privacy, and <https://www.goalz.de/agenten.php#nutzung> for use terms. The publisher contact is <mailto:danielgebauer@gmail.com>.
+Read <https://www.goalz.de/agenten.php#einrichten> for setup, <https://www.goalz.de/agenten.php#datenschutz> for privacy, and <https://www.goalz.de/agenten.php#nutzung> for use terms. Public user support is available at <mailto:support@goalz.de> or <https://www.goalz.de/agenten.php#support>. Publisher and marketplace contact: <mailto:apps@goalz.de>.
 
 The Goalz logo and marks are reserved; see `NOTICE.md`.

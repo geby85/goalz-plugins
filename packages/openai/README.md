@@ -14,6 +14,6 @@ Goalz will expose only tools supported by those granted rights. If writes are la
 
 The included skill explains safe account setup, reads, writes, public messages, and Wappen previews in English with German examples. Wappen generation stays available, may use quota or incur cost, and leaves the result private until the manager separately accepts it.
 
-Read <https://www.goalz.de/agenten.php#einrichten> for setup, <https://www.goalz.de/agenten.php#support> for support, <https://www.goalz.de/agenten.php#datenschutz> for privacy, and <https://www.goalz.de/agenten.php#nutzung> for use terms. The publisher contact is <mailto:danielgebauer@gmail.com>.
+Read <https://www.goalz.de/agenten.php#einrichten> for setup, <https://www.goalz.de/agenten.php#datenschutz> for privacy, and <https://www.goalz.de/agenten.php#nutzung> for use terms. Public user support is available at <mailto:support@goalz.de> or <https://www.goalz.de/agenten.php#support>. Publisher and marketplace contact: <mailto:apps@goalz.de>.
 
 This package contains no local server, executable hook, shell command, static credential, or backend source. The Goalz logo and marks are reserved; see `NOTICE.md`.

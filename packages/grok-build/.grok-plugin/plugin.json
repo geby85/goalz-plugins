@@ -4,7 +4,7 @@
   "description": "Read and manage your Goalz football-manager account through the hosted Goalz MCP server. Connect with your own Goalz account; gameplay writes require their requested OAuth permissions.",
   "author": {
     "name": "Daniel Gebauer",
-    "email": "danielgebauer@gmail.com",
+    "email": "apps@goalz.de",
     "url": "https://www.goalz.de/agenten.php"
   },
   "homepage": "https://www.goalz.de/agenten.php",

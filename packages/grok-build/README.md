@@ -8,6 +8,6 @@ For Grok.com custom MCP connectors, use the custom connector flow in Grok's conn
 
 The intended public repository is `https://github.com/geby85/goalz-plugins`. An xAI marketplace entry must use `source.path: "packages/grok-build"` for this plugin directory and a full reachable 40-character lowercase commit SHA. The current xAI format treats `category` as optional free-form metadata; this package leaves it out unless the publisher deliberately supplies a value. No fabricated SHA or category is included here. The repository and production endpoint still require separate publication/activation checks.
 
-Read <https://www.goalz.de/agenten.php#einrichten> for setup, <https://www.goalz.de/agenten.php#support> for support, <https://www.goalz.de/agenten.php#datenschutz> for privacy, and <https://www.goalz.de/agenten.php#nutzung> for use terms. The publisher contact is <mailto:danielgebauer@gmail.com>.
+Read <https://www.goalz.de/agenten.php#einrichten> for setup, <https://www.goalz.de/agenten.php#datenschutz> for privacy, and <https://www.goalz.de/agenten.php#nutzung> for use terms. Public user support is available at <mailto:support@goalz.de> or <https://www.goalz.de/agenten.php#support>. Publisher and marketplace contact: <mailto:apps@goalz.de>.
 
 The Goalz logo and marks are reserved; see `NOTICE.md`.

@@ -4,7 +4,7 @@
   "description": "Connect your Goalz football-manager account to Cursor through a remote MCP server.",
   "author": {
     "name": "Daniel Gebauer",
-    "email": "danielgebauer@gmail.com"
+    "email": "apps@goalz.de"
   },
   "homepage": "https://www.goalz.de/agenten.php",
   "repository": "https://github.com/geby85/goalz-plugins",
